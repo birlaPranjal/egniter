@@ -1,9 +1,9 @@
 import Image from "next/image";
-import soon from "../../public/soon.svg";
+import soon from "../../public/big.png";
 export default function Home() {
   return (
-    <div>
-     <Image src={soon} alt="Comming Soon" className="h-screen w-screen object-fit" />
+    <div className="">
+     <Image src={soon} alt="Comming Soon" className="h-screen w-screen" />
     </div>
   );
 }
