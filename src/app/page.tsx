@@ -13,18 +13,18 @@ export default function Home() {
           href="https://www.instagram.com/egniterproduction" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-black/50 backdrop-blur-sm px-5 py-4 rounded-full hover:bg-black/30 transition-all"
+          className="flex items-center gap-2 bg-white/70 font-bold text-black backdrop-blur-sm px-5 py-4 rounded-full hover:bg-white/30 transition-all"
         >
-          <FaInstagram className="w-5 h-5 text-pink-500" />
+          <FaInstagram className="w-6 h-6 text-pink-500 font-bold" />
           Instagram
         </a>
         <a 
           href="https://www.youtube.com/@Egniter" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-black/50 backdrop-blur-sm px-5 py-4 rounded-full hover:bg-black/30 transition-all"
+          className="flex items-center gap-2 font-bold bg-white/70 text-black backdrop-blur-sm px-5 py-4 rounded-full hover:bg-white/30 transition-all"
         >
-          <FaYoutube className="w-5 h-5 text-red-500" />
+          <FaYoutube className="w-6 h-6 text-red-500" />
           Youtube
         </a>
       </div>
