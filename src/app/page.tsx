@@ -18,8 +18,8 @@ export default function Home() {
         <div className="space-y-4">
           <div className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
             <span className="text-[#3AA5F7]">We believe </span>
-            <span className="text-[#3AA5F7] ">creativity </span>
-            <span className="gradient-text">can solve </span>
+            <span className="gradient-text ">creativity </span>
+            <span className="gradient-text2">can solve </span>
             <span className="gradient-text">almost any problem.</span>
           </div>
           <p className="text-xl md:text-2xl text-gray-400 mt-4">
