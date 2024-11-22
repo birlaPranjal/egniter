@@ -9,7 +9,7 @@ export default function Home() {
       <div className="absolute top-8 md:top-24 w-full max-w-5xl flex justify-center">
         <div className="flex justify-center items-center text-4xl md:text-5xl font-bold logo-gradient">
           <Image src={logo} alt="Egniter Logo" className="w-12 h-12 md:w-20 md:h-20" />
-          <div className='mb-3 font-medium'>egniter</div>
+          <div className='mb-1 md:mb-3 font-medium ' >egniter</div>
         </div>
       </div>
 
@@ -17,10 +17,10 @@ export default function Home() {
       <div className="max-w-4xl mx-auto text-center -mt-10 md:-mt-0">
         <div className="space-y-4">
           <div className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-            <span className="text-[#3AA5F7]">&quot;We believe </span>
-            <span className="gradient-text">creativity </span>
-            <span className="text-[#3AA5F7]">can solve </span>
-            <span className="gradient-text">almost any problem.&quot;</span>
+            <span className="text-[#3AA5F7]">We believe </span>
+            <span className="text-[#3AA5F7] ">creativity </span>
+            <span className="gradient-text">can solve </span>
+            <span className="gradient-text">almost any problem.</span>
           </div>
           <p className="text-xl md:text-2xl text-gray-400 mt-4">
             -George Lois
