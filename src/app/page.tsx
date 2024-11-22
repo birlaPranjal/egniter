@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-8 md:p-24">
+    <main className="h-[92.9vh] md:min-h-screen flex flex-col items-center justify-center p-8 md:p-24">
       {/* Logo Section */}
       <div className="absolute top-8 md:top-24 w-full max-w-5xl flex justify-center">
         <div className="flex justify-center items-center text-4xl md:text-5xl font-bold logo-gradient">
@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       {/* Quote Section */}
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center -mt-10 md:-mt-0">
         <div className="space-y-4">
           <div className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
             <span className="text-[#3AA5F7]">&quot;We believe </span>
