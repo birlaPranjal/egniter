@@ -9,31 +9,5 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
+  background-color: #000;
 }
-
-.gradient-text {
-  background: linear-gradient(to right, #3AA5F7, #A855F7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.gradient-text2 {
-  background: linear-gradient(to left, #3AA5F7, #A855F7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.logo-gradient {
-  background: linear-gradient(to right, #ffffff, #e0e0e0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
