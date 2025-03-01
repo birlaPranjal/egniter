@@ -2,7 +2,6 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -221,12 +220,6 @@ export default function Services() {
               <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
                 From concept to execution, we deliver comprehensive creative services that elevate brands and drive results.
               </p>
-              <Link 
-                href="/services" 
-                className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium hover:shadow-lg transition-all duration-300"
-              >
-                Explore All Services
-              </Link>
             </div>
 
             {/* Horizontal Scroll Section */}

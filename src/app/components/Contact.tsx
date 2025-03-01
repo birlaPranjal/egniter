@@ -9,7 +9,7 @@ export default function Contact() {
   });
 
   return (
-    <section ref={ref} id="contact" className="py-32 relative overflow-hidden bg-black min-h-screen">
+    <section ref={ref} id="contact" className="pt-20 relative overflow-hidden bg-black min-h-screen">
       {/* Blur Circles */}
       <div className="absolute -left-1/4 top-1/3 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
       <div className="absolute right-1/3 top-[150px] bottom-0 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
@@ -22,7 +22,7 @@ export default function Contact() {
         >
           <h3 className="text-sm text-[#1849C6] mb-4 tracking-widest font-medium">/CONTACT US</h3>
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">Get in <span className="italic font-light">Touch</span></h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-300 max-w-4xl mx-auto -my-7">
             Have a project in mind or want to learn more about our services? We&apos;d love to hear from you.
           </p>
         </motion.div>
@@ -35,7 +35,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="bg-gray-900/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-800"
           >
-            <h3 className="text-2xl font-semibold mb-6 text-white">Send us a message</h3>
+            <h3 className="text-2xl font-semibold -mt-5 mb-4 text-white">Send us a message</h3>
             <form className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -48,12 +48,12 @@ export default function Contact() {
                 </div>
               </div>
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2 -mt-2">Subject</label>
                 <input type="text" id="subject" className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white" />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Message</label>
-                <textarea id="message" rows={5} className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white"></textarea>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2 -mt-3">Message</label>
+                <textarea id="message" rows={5} className="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-white h-28"></textarea>
               </div>
               <button type="submit" className="w-full py-3 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium rounded-lg hover:shadow-lg transition-all duration-300">
                 Send Message

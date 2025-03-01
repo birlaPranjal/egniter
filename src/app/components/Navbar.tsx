@@ -50,7 +50,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 backdrop-blur-md transition-colors duration-300"
     >
       <div className="container mx-auto px-4 lg:px-8 xl:px-12">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo and Brand Name */}
           <Link 
             href="/" 
@@ -65,18 +65,18 @@ const Navbar = () => {
                 className="object-contain"
               />
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+            <span className="text-2xl md:text-3xl font-thin text-white">
               Egniter
             </span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-12 gap-5 ">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="relative text-white/80 hover:text-white transition-colors duration-300 group px-3 py-2"
+                className="relative text-white/80 hover:text-white transition-colors duration-300 group  py-1 hover:italic"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>

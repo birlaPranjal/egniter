@@ -36,15 +36,15 @@ const Hero: React.FC = () => {
             transition={{ duration: 2, ease: "easeInOut" }}
             className="text-6xl md:text-8xl mb-2 mt-8 font-cursive bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
           >
-            We believe creativity
+            We believe <span className="italic font-light">creativity</span>
           </motion.h1>
           <motion.h2 
             initial={{ opacity: 0, y: 40, rotate: 2 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ duration: 2, delay: 0.5, ease: "easeInOut" }}
-            className="text-3xl md:text-6xl w-8/12 md:w-full mx-auto font-light italic mb-12 md:mb-16 font-cursive bg-gradient-to-r from-purple-400 to-blue-600 bg-clip-text text-transparent pb-5"
+            className="text-3xl md:text-6xl w-8/12 md:w-full mx-auto font-normal mb-12 md:mb-16 font-cursive bg-gradient-to-r from-purple-400 to-blue-600 bg-clip-text text-transparent pb-5"
           >
-            can solve almost any problem
+            can solve almost <span className="italic font-light">any problem</span>
           </motion.h2>
         </motion.div>
 
