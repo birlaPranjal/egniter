@@ -103,7 +103,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} className="py-24 bg-black text-white relative overflow-hidden">
+    <section ref={ref} className="py-24 bg-black text-white relative overflow-hidden md:px-28">
       {/* Blur Circles */}
       <div className="absolute -left-1/4 top-1/3 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
       <div className="absolute right-1/3 top-[150px] bottom-0 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
@@ -145,12 +145,17 @@ const Team: React.FC = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="group"
             >
-              <div className="relative overflow-hidden rounded-2xl mb-4">
+              <div className="relative overflow-hidden rounded-2xl mb-4 glitch-container">
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full aspect-[3/4] object-cover glitch-image"
                 />
+                <div className="glitch-layers">
+                  <div className="glitch-layer"></div>
+                  <div className="glitch-layer"></div>
+                  <div className="glitch-layer"></div>
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-4 w-full">
                     <div className="flex justify-center space-x-4">
@@ -178,6 +183,7 @@ const Team: React.FC = () => {
                     </div>
                   </div>
                 </div>
+                <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_20%,black_80%)] opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
               </div>
               <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
               <p className="text-[#1849C6]">{member.role}</p>
@@ -190,3 +196,132 @@ const Team: React.FC = () => {
 };
 
 export default Team; 
+
+<style jsx>{`
+  @keyframes glitch-anim {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transform: translate(0);
+    }
+    10% {
+      clip-path: polygon(0 10%, 100% 20%, 100% 80%, 0 90%);
+      transform: translate(-10px, 5px);
+    }
+    20% {
+      clip-path: polygon(0 20%, 100% 30%, 100% 70%, 0 80%);
+      transform: translate(10px, -5px);
+    }
+    30% {
+      clip-path: polygon(0 30%, 100% 40%, 100% 60%, 0 70%);
+      transform: translate(-15px, 10px);
+    }
+    40% {
+      clip-path: polygon(0 40%, 100% 50%, 100% 50%, 0 60%);
+      transform: translate(15px, -10px);
+    }
+    50% {
+      clip-path: polygon(0 50%, 100% 60%, 100% 40%, 0 50%);
+      transform: translate(-20px, 15px);
+    }
+    60% {
+      clip-path: polygon(0 60%, 100% 70%, 100% 30%, 0 40%);
+      transform: translate(20px, -15px);
+    }
+    70% {
+      clip-path: polygon(0 70%, 100% 80%, 100% 20%, 0 30%);
+      transform: translate(-25px, 20px);
+    }
+    80% {
+      clip-path: polygon(0 80%, 100% 90%, 100% 10%, 0 20%);
+      transform: translate(25px, -20px);
+    }
+    90% {
+      clip-path: polygon(0 90%, 100% 100%, 100% 0%, 0 10%);
+      transform: translate(-30px, 25px);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      transform: translate(0);
+    }
+  }
+
+  .glitch-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glitch-image {
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .glitch-layers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .glitch-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0;
+    mix-blend-mode: hard-light;
+    animation: glitch-anim 0.5s infinite;
+    filter: hue-rotate(90deg);
+  }
+
+  .glitch-layer:nth-child(1) {
+    background: rgba(255, 0, 0, 0.5);
+    animation-delay: 0.1s;
+    transform: translate(-5px, 5px);
+  }
+
+  .glitch-layer:nth-child(2) {
+    background: rgba(0, 255, 0, 0.5);
+    animation-delay: 0.2s;
+    transform: translate(5px, -5px);
+  }
+
+  .glitch-layer:nth-child(3) {
+    background: rgba(0, 0, 255, 0.5);
+    animation-delay: 0.3s;
+    transform: translate(-10px, 10px);
+  }
+
+  .group:hover .glitch-image {
+    filter: contrast(1.5) brightness(1.2) saturate(1.5);
+    transform: scale(1.05);
+  }
+
+  .group:hover .glitch-layer {
+    opacity: 1;
+    animation-duration: 0.2s;
+    filter: hue-rotate(180deg);
+  }
+
+  .group:hover .glitch-container {
+    animation: shake 0.5s infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(0); }
+    10% { transform: translate(-2px, 2px); }
+    20% { transform: translate(2px, -2px); }
+    30% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    50% { transform: translate(-4px, 4px); }
+    60% { transform: translate(4px, -4px); }
+    70% { transform: translate(-3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    90% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0); }
+  }
+`}</style> 

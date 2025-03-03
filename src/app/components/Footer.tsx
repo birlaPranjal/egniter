@@ -1,13 +1,14 @@
 "use client";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white py-16 relative overflow-hidden">
+    <footer className="bg-black text-white py-16 relative overflow-hidden md:px-28">
       {/* Blur Circles */}
-      <div className="absolute -left-1/4 bottom-0 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
-      <div className="absolute right-1/4 top-0 w-[400px] h-[400px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
+      <div className="absolute -left-1/4 bottom-0 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px] z-0" />
+      <div className="absolute right-1/4 top-0 w-[400px] h-[400px] rounded-full bg-[#1849C6] opacity-30 blur-[120px] z-0" />
       
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -18,7 +19,10 @@ const Footer: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-bold mb-4">Egniter</h2>
+              <div className="flex items-center gap-4 mb-4">
+                <Image src="/logo.svg" alt="Egniter" width={50} height={50} />
+                <h2 className="text-3xl font-bold -mt-1">Egniter</h2>
+              </div>
               <p className="text-gray-400 mb-6 max-w-md">
                 We are a creative powerhouse that blends strategy, design, and technology 
                 to craft impactful brand experiences.
@@ -53,14 +57,15 @@ const Footer: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="z-10"
           >
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><Link href="/about-us" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
               <li><Link href="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-              <li><Link href="/#work" className="text-gray-400 hover:text-white transition-colors">Work</Link></li>
-              <li><Link href="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/our-work" className="text-gray-400 hover:text-white transition-colors">Work</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </motion.div>
           

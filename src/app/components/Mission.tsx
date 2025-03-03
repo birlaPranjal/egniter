@@ -27,7 +27,7 @@ const Mission: React.FC = () => {
   ];
 
   return (
-    <section ref={ref} className="py-24 bg-black text-white relative overflow-hidden">
+    <section ref={ref} className="py-24 bg-black text-white relative overflow-hidden md:px-28">
       {/* Blur Circles */}
       <div className="absolute -left-1/4 top-1/3 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
       <div className="absolute right-1/3 top-[150px] bottom-0 w-[500px] h-[500px] rounded-full bg-[#1849C6] opacity-30 blur-[120px]" />
