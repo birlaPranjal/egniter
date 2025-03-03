@@ -16,13 +16,13 @@ const Hero: React.FC = () => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 3, ease: "easeInOut" }}
-        className="absolute -left-[20%] top-[10%] w-[300px] h-[300px] md:-left-1/4 md:w-[900px] md:h-[900px] rounded-full bg-[#1849C6] opacity-20 md:opacity-50 blur-[40px] md:blur-[120px]"
+        className="absolute -left-[20%] top-[10%] w-[300px] h-[300px] md:-left-1/4 md:w-[900px] md:h-[900px] rounded-full bg-[#1849C6]/70 opacity-40 md:opacity-50 blur-[40px] md:blur-[120px]"
       />
       <motion.div 
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, duration: 3, ease: "easeInOut" }}
-        className="absolute -right-[20%] bottom-[10%] w-[300px] h-[300px] md:-right-1/4 md:w-[900px] md:h-[900px] rounded-full bg-[#1849C6] opacity-20 md:opacity-50 blur-[40px] md:blur-[120px]"
+        className="absolute -right-[20%] bottom-[10%] w-[300px] h-[300px] md:-right-1/4 md:w-[900px] md:h-[900px] rounded-full bg-[#1849C6]/70 opacity-40 md:opacity-50 blur-[40px] md:blur-[120px]"
       />
       
       <div className="container mt-12 md:mt-5 lg:mt-0 mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
           {/* Video for medium and larger screens */}
           <video
             className="hidden md:block w-full aspect-video object-cover rounded-2xl mix-blend-luminosity"
-            src="https://videos.pexels.com/video-files/7883678/7883678-uhd_2560_1440_30fps.mp4"
+            src="/hero-video.mp4"
             autoPlay
             muted
             loop
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           {/* Video for mobile devices */}
           <video
             className="md:hidden w-full aspect-video object-cover rounded-2xl mix-blend-luminosity"
-            src="https://videos.pexels.com/video-files/7883678/7883678-uhd_2560_1440_30fps.mp4"
+            src="/hero-video.mp4"
             autoPlay
             muted
             loop
