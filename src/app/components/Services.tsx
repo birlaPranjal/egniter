@@ -113,91 +113,91 @@ export default function Services() {
 
   const services = [
     { 
-      icon: '📱', 
-      title: 'Social Media Marketing', 
-      description: 'Crafting impactful social strategies',
-      details: [
-        'Content strategy development',
-        'Platform-specific campaigns',
-        'Community engagement',
-        'Analytics & reporting'
-      ]
-    },
-    { 
       icon: '🎯', 
-      title: 'Campaign Management', 
-      description: 'End-to-end campaign execution',
+      title: 'Brand Strategy & Consulting', 
+      description: 'Defining your brand identity and market positioning',
       details: [
-        'Concept development',
-        'Cross-channel integration',
-        'Performance tracking',
-        'ROI optimization'
+        'Brand identity development',
+        'Market positioning strategy',
+        'Brand narrative creation',
+        'Brand launch consulting'
       ]
     },
     { 
-      icon: '📈', 
-      title: 'Ads Management', 
-      description: 'Optimized ad performance',
+      icon: '📱', 
+      title: 'Social Media & Campaign Management', 
+      description: 'Tailored strategies that drive engagement and results',
       details: [
-        'Target audience analysis',
-        'Ad creative development',
-        'Budget optimization',
-        'A/B testing'
+        'Content creation & curation',
+        'Community management',
+        'Paid advertising campaigns',
+        'Analytics & performance tracking'
       ]
     },
     { 
-      icon: '🚀', 
-      title: 'Brand Launch', 
-      description: 'Memorable brand introductions',
+      icon: '📸', 
+      title: 'Photography & Cinematography', 
+      description: 'Capturing your brand essence through stunning visuals',
       details: [
-        'Brand positioning',
-        'Launch strategy',
-        'Media outreach',
-        'Post-launch analysis'
+        'Brand photography sessions',
+        'Cinematic video production',
+        'Product photography',
+        'Corporate videography'
       ]
     },
     { 
-      icon: '🎥', 
-      title: 'Content Production', 
-      description: 'High-quality creative content',
+      icon: '🎬', 
+      title: 'Video Editing & Explainer Videos', 
+      description: 'Crafting visually compelling video content',
       details: [
-        'Video production',
-        'Photography',
-        'Graphic design',
-        'Content distribution'
+        'Professional video editing',
+        'Explainer video creation',
+        'Motion graphics design',
+        'Post-production services'
       ]
     },
     { 
       icon: '🖼️', 
-      title: 'CGI Videos', 
-      description: 'Stunning visual effects',
+      title: 'CGI & AI Videos', 
+      description: 'Cutting-edge technology for hyper-realistic visuals',
       details: [
-        '3D modeling',
-        'Animation',
-        'Visual effects',
-        'Post-production'
-      ]
-    },
-    { 
-      icon: '📚', 
-      title: 'Brand Literature', 
-      description: 'Compelling brand narratives',
-      details: [
-        'Brand guidelines',
-        'Case studies',
-        'Whitepapers',
-        'Content strategy'
+        'CGI video production',
+        'AI-generated visuals',
+        '3D animation & modeling',
+        'Virtual reality content'
       ]
     },
     { 
       icon: '✈️', 
       title: 'FPV Videos', 
-      description: 'Immersive aerial experiences',
+      description: 'Dynamic first-person perspective experiences',
       details: [
-        'Drone cinematography',
-        'Aerial mapping',
-        '360° videos',
-        'Virtual tours'
+        'FPV drone cinematography',
+        'Immersive video experiences',
+        'Action sequence filming',
+        'Aerial storytelling'
+      ]
+    },
+    { 
+      icon: '📈', 
+      title: 'Ads & Campaign Design', 
+      description: 'Creative campaigns that deliver measurable results',
+      details: [
+        'Digital ad campaign creation',
+        'Cross-platform advertising',
+        'Campaign performance optimization',
+        'Creative asset development'
+      ]
+    },
+    { 
+      icon: '🎨', 
+      title: 'Creative Content Production', 
+      description: 'Full suite of content production services',
+      details: [
+        'Graphic design & branding',
+        'Content strategy development',
+        'Multi-media production',
+        'Brand asset creation'
       ]
     }
   ];
@@ -215,10 +215,10 @@ export default function Services() {
             <div className="text-center mb-16 px-4 w-full">
               <h3 className="text-sm text-[#1849C6] mb-4 tracking-widest font-medium">/OUR SERVICES</h3>
               <h2 className="text-5xl md:text-7xl mb-8 text-white font-bold">
-                Full-Service <span className="italic font-light">Creative Solutions</span>
+                Integrated <span className="italic font-light">Creative Services</span>
               </h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-                From concept to execution, we deliver comprehensive creative services that elevate brands and drive results.
+              <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
+                At Egniter, we offer a range of integrated creative services to help brands connect, engage, and grow. Our expert team blends creativity with innovation to deliver high-impact solutions.
               </p>
             </div>
 
