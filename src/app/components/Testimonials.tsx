@@ -164,24 +164,12 @@ const Testimonials: React.FC = () => {
       opacity: 1,
       scale: 1,
       rotateY: 0,
-      transition: {
-        duration: 0.8,
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
     },
     exit: (direction: number) => ({
       x: direction < 0 ? 1000 : -1000,
       opacity: 0,
       scale: 0.8,
       rotateY: direction < 0 ? 45 : -45,
-      transition: {
-        duration: 0.8,
-        type: "spring",
-        stiffness: 300,
-        damping: 30
-      }
     })
   };
 
