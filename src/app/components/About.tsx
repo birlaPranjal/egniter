@@ -63,7 +63,7 @@ const About = () => {
               What <span className="italic font-light">Defines Us?</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed">
-              We are a creative powerhouse that blends strategy, design, and technology to craft impactful brand experiences. Our team of passionate professionals is dedicated to pushing boundaries and delivering innovative solutions that drive results.
+              At Egniter, we're more than just a creative company—we are a force of innovation, sparking transformation across industries through the power of creativity. We believe that creativity can solve almost any problem, and we bring this philosophy to everything we do. With an unwavering passion for storytelling, visual artistry, and cutting-edge technology, we help brands redefine their identities, connect with audiences, and break through the noise.
             </p>
             <div className="flex justify-center">
               <ImageSlider />
@@ -122,7 +122,7 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-300 mb-12 leading-relaxed"
           >
-            We are a creative powerhouse that blends strategy, design, and technology to craft impactful brand experiences. Our team of passionate professionals is dedicated to pushing boundaries and delivering innovative solutions that drive results.
+            At Egniter, we're more than just a creative company—we are a force of innovation, sparking transformation across industries through the power of creativity. We believe that creativity can solve almost any problem, and we bring this philosophy to everything we do. With an unwavering passion for storytelling, visual artistry, and cutting-edge technology, we help brands redefine their identities, connect with audiences, and break through the noise.
           </motion.p>
 
           <motion.div
