@@ -29,8 +29,8 @@ const Expertise: React.FC = () => {
       color: "from-purple-600 to-purple-400"
     },
     {
-      title: "Web Development",
-      description: "We build responsive, high-performance websites and applications that deliver exceptional user experiences across all devices.",
+      title: "Brand Launch",
+      description: "We orchestrate comprehensive brand launches that create significant market impact and establish strong brand presence from day one.",
       icon: "/icons/development.svg",
       color: "from-indigo-600 to-indigo-400"
     },
