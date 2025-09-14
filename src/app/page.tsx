@@ -1,14 +1,12 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import About from '@/app/components/About';
-import Work from '@/app/components/Work';
 import Clients from '@/app/components/Clients'
 import Contact from '@/app/components/Contact'
 import Footer from './components/Footer';
 import Mission from './components/Mission2';
 import Expertise from './components/Expertise';
 import Process from './components/Process';
-import Stats from './components/Stats';
 import dynamic from "next/dynamic";
 
 const Navbar = dynamic(() => import("./components/Navbar"), {
@@ -55,8 +53,6 @@ const Page: React.FC = () => {
           <Services />
           <Mission />
           <Expertise />
-          <Work />
-          <Stats />
           <Process />
           <Clients />
           <Contact />
