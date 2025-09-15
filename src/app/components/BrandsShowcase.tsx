@@ -22,7 +22,7 @@ const BrandsShowcase: React.FC = () => {
     {
       id: 'egniter',
       name: 'Egniter',
-      logo: '/logo.svg',
+      logo: '/logo1.png',
       description: 'A full-service creative agency specializing in brand strategy, design, and digital experiences. We ignite brands with purpose-driven creativity and innovative solutions that drive meaningful connections and business growth.',
       website: 'https://egniter.com',
       color: 'from-blue-600 to-purple-600'
@@ -30,7 +30,7 @@ const BrandsShowcase: React.FC = () => {
     {
       id: 'meta-visuals',
       name: 'Meta Visuals',
-      logo: '/meta-visuals-logo.svg',
+      logo: '/meta-visuals-logo1.png',
       description: 'Specializing in immersive visual experiences, Meta Visuals creates cutting-edge AR/VR solutions, 3D visualizations, and interactive media that push the boundaries of digital storytelling and engagement.',
       website: 'https://metavisuals.com',
       color: 'from-green-500 to-blue-500'
@@ -38,7 +38,7 @@ const BrandsShowcase: React.FC = () => {
     {
       id: 'potato-pixels',
       name: 'Potato Pixels',
-      logo: '/potato-pixels-logo.svg',
+      logo: '/potato-pixels-logo1.png',
       description: 'A quirky digital production studio focused on creating playful, engaging content for social media, web, and mobile platforms. We combine creativity with technical expertise to deliver content that stands out in the digital landscape.',
       website: 'https://potatopixels.com',
       color: 'from-yellow-500 to-orange-500'
