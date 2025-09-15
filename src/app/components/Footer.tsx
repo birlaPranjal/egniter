@@ -20,8 +20,7 @@ const Footer: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="flex items-center gap-4 mb-4">
-                <Image src="/logo.svg" alt="Egniter" width={50} height={50} />
-                <h2 className="text-3xl font-bold -mt-1">Egniter</h2>
+                <Image src="/logo1.png" alt="Egniter" width={250} height={100} />
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
                 We are a creative powerhouse that blends strategy, design, and technology 
