@@ -57,17 +57,14 @@ const Navbar = () => {
             className="flex items-center space-x-3"
             onClick={() => setIsOpen(false)}
           >
-            <div className="w-10 h-10 relative">
+            <div className="w-[250px] h-[40px] relative">
               <Image
-                src="/logo.svg"
+                src="/logo1.png"
                 alt="Egniter Logo"
                 fill
                 className="object-contain"
               />
             </div>
-            <span className="text-2xl md:text-3xl font-thin text-white">
-              Egniter
-            </span>
           </Link>
 
           {/* Desktop Menu */}
