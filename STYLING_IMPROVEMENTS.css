@@ -1,0 +1,44 @@
+/* Enhanced styling improvements for better user experience */
+
+/* Logo container improvements */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+  .logo-container {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-container {
+    max-width: 250px;
+  }
+}
+
+/* Improved visual hierarchy */
+.hero-title {
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Better spacing and layout */
+.component-spacing {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+/* Enhanced accessibility */
+.logo-image {
+  alt: 'Egniter Logo';
+  loading: 'lazy';
+}
