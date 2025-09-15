@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   const width = useTransform(scrollYProgress, [0, 0.1], ['100%', '150%']);
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden pt-20 md:pt-32">
+    <section id="home" className="min-h-screen relative pt-20 md:pt-32">
       {/* Blur Circles */}
       <motion.div 
         initial={{ scale: 0 }}
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 40, rotate: -2 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ duration: 2, ease: "easeInOut" }}
-            className="text-6xl md:text-8xl mb-2 mt-8 font-cursive bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
+            className="text-4xl md:text-8xl mb-2 mt-8 font-cursive bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent"
           >
             We believe <span className="italic font-light">creativity</span>
           </motion.h1>
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
 
           {/* Video for mobile devices */}
           <video
-            className="md:hidden w-full aspect-video object-cover rounded-2xl mix-blend-luminosity"
+            className="md:hidden w-full aspect-video object-cover rounded-2xl mix-blend-luminosity pb-10"
             src="/hero-video.mp4"
             autoPlay
             muted
